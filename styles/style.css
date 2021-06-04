@@ -46,3 +46,10 @@ body {
   border-radius: 3px;
   transition: 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
