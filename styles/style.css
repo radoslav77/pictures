@@ -16,20 +16,33 @@ body {
   margin: 0;
 }
 
-main {
+.main {
   display: flex;
   flex-wrap: wrap;
 }
 .card {
   width: 300px;
   margin: 1rem;
-  background-color: var(--secondary-color);
+  background-color: #1b1b1b;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
   border-radius: 3px;
+  transition: 0.4s ease;
 }
 
 .card img {
   width: 100%;
+  height: auto;
+}
+
+.card.active {
+  width: 500px;
+  height: auto;
+  margin: 1rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
 }
