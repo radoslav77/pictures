@@ -19,17 +19,20 @@ body {
 .main {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1500px;
 }
 .card {
   max-width: 1000px;
   width: 300px;
+  height: 300px;
   margin: 1rem;
   background-color: #1b1b1b;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
   overflow: hidden;
   border-radius: 3px;
   transition: 0.4s ease;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card img {
@@ -38,11 +41,10 @@ body {
 }
 
 .card.active {
-  width: 500px;
+  width: auto;
   height: auto;
   margin: 1rem;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-
   overflow: hidden;
   border-radius: 3px;
   transition: 0.5s ease-in-out;
